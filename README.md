@@ -1,2 +1,0 @@
-# Profile-Ad
-About Me
