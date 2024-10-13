@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark gray text */
+    background-color: #f4f4f4; 
+    color: #333; 
     line-height: 1.6;
 }
 
@@ -88,7 +88,7 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 5px; 
 }
 
 .contact:hover{
@@ -110,7 +110,7 @@ body {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 5px; 
 }
 
 .btn-2:hover {
@@ -162,7 +162,7 @@ body {
 
 /* Main Content Styling */
 main {
-    padding: 100px 5% 60px; /* Top padding accounts for fixed header */
+    padding: 100px 5% 60px; 
     max-width: 1200px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -213,7 +213,7 @@ section ul li {
     cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 5px; /* Space between icon and text */
+    gap: 5px; 
 }
 
 .resume-link:hover {
