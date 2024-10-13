@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Adriane Cerna</title>
+    <meta name="description" content="Contact Adriane Cerna, a Software Developer specializing in Python, Laravel, Django, and more. Reach out for collaborations or inquiries.">
+    <link rel="stylesheet" href="css/contact.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span>Adriane</span>
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html#portfolio" class="nav-link"><i class='bx bx-briefcase'></i> Portfolio</a>
+            <a href="service.html" class="nav-link"><i class='bx bx-cog'></i> Service</a>
+            <a href="experience.html" class="nav-link"><i class='bx bx-star'></i> Experience</a>
+            <a href="education.html" class="nav-link"><i class='bx bx-book-alt'></i> Education</a>
+            <a href="contact.html" class="nav-link active"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+        
+
+        <a href="contact.html" class="contact-button"></a>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-content">
+                <h2>Contact Me</h2>
+                <form action="submit_form.php" method="post" class="contact-form">
+                    <div class="form-group">
+                        <label for="name"><i class='bx bx-user'></i> Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email"><i class='bx bx-envelope'></i> Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message"><i class='bx bx-message'></i> Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-1">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <p>Feel free to reach out for collaborations, projects, or just a friendly hello!</p>
+                <ul>
+                    <li><i class='bx bx-phone'></i> +63 9610792012 </li>
+                    <li><i class='bx bx-envelope'></i> adrianecerna19@gmail.com</li>
+                    <li><i class='bx bx-map'></i>Blk 40, Addition Hills Mandaluyong City</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/adriane-cerna-7b7538312/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/edreyan" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="adrianecerna19@gmail.com"><i class='bx bx-envelope'></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Adriane Cerna. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/adriane-cerna-7b7538312/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="ttps://github.com/edreyan" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="adrianecerna19@gmail.com"><i class='bx bx-envelope'></i></a>
+        </div>
+    </footer>
+
+    <!-- Smooth Scrolling Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

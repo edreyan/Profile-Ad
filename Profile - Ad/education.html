@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Education</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/education.css">
+    <!-- Link to Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Favicon (Optional) -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span>Adriane</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="navbar">
+            <a href="index.html#portfolio" class="nav-link"><i class='bx bx-briefcase'></i> Portfolio</a>
+            <a href="service.html" class="nav-link"><i class='bx bx-cog'></i> Service</a>
+            <a href="experience.html" class="nav-link"><i class='bx bx-star'></i> Experience</a>
+            <a href="education.html" class="nav-link active"><i class='bx bx-book-alt'></i> Education</a>
+            <a href="contact.html" class="nav-link"><i class='bx bx-envelope'></i> Contact</a>
+        </nav>
+
+        
+
+        <!-- Hamburger Menu (Visible on Mobile) -->
+        <div class="hamburger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Education Section -->
+        <section class="education-section">
+            <div class="education-content">
+                <div class="education-text">
+                    <h2>My Education</h2>
+                    <div class="education-item">
+                        <h3>BSIT Major in Electronics Technology</h3>
+                        <p><strong>Eulogio "Amang" Rodriguez Institute of Science and Technology</strong> | 2020 - 2024</p>
+                        <p>Graduated with specialization in Hardware & Software Development and Data Structures.</p>
+                    </div>
+                </div>
+                <div class="img-box">
+                    <img src="img/Grad.jpg" alt="Adriane working on a software project">
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified NC II in CSS, Computer System Servicing</li>
+                <li>DICT-ICT017 Advanced Level of Software Engineering</li>
+                <li>DICT-ICT013 Intermediate Level of Software Engineering</li>
+                <li>WD005 Project 1: Developing a Static Website</li>
+                <li>DICT-MAD009 Using Firebase as an Application Back End</li>
+                <li>DICT-ICT016 Advanced Level of Cloud Computing</li>
+                <li>DICT-WD003 Basic JavaScript for Web Development</li>
+                <li>DICT-WD002 Using HTML and CSS to Design a Website</li>
+                <li>DICT-WD001 Principles of Web Development and Introduction to HTML</li>
+                <li>DICT-MAD008 Android Fragments</li>
+                <li>DICT-MAD006 Introduction to Android Application Development</li>
+                <li>DICT-Programming for Beginners Using Python</li>
+                <li>DICT-Learn Basic Statistics with Python</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Adriane. All rights reserved.
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.navbar');
+        const headerButtons = document.querySelector('.header-buttons');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            headerButtons.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

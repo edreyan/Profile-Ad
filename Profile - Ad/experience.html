@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience</title>
+    <!-- Link to Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="css/experince.css">
+    <!-- Favicon (Optional) -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Google Fonts (Optional) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span>Adriane</span>
+        </a>
+        
+        <a href="contact.html" class="contact"><i class='bx bx-envelope'></i> Contact Me</a>
+        <div class="hamburger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Experience</h1>
+        
+        <div class="experience-section">
+            <div class="experience-item">
+                <h2>OJT, IT-UNIT NYC, National Youth Commission</h2>
+                <p><strong>October 2023 - April 2024</strong></p>
+                <ul>
+                    <li>Delivered specialized technical support for hardware and software, guaranteeing uninterrupted IT functionality during critical events.</li>
+                    <li>Contributed to web development projects, enhancing digital presence and user experience.</li>
+                    <li>Conducted thorough QA testing for web applications, ensuring robust performance and reliability.</li>
+                </ul>
+            </div>
+
+            <!-- Colleagues Section -->
+            <div class="colleagues-section">
+                <h2>Colleagues</h2>
+                <div class="colleagues-list">
+                    <div class="colleague">
+                        <img src="img/sir1.jpg" alt="ENGR Rance">
+                        <div class="colleague-name">ENGR Rance</div>
+                        <div class="colleague-role">IT Head</div>
+                    </div>
+                    <div class="colleague">
+                        <img src="img/sir2.jpg" alt="Jhomel">
+                        <div class="colleague-name">Jhomel</div>
+                        <div class="colleague-role">Web Developer</div>
+                        <div class="colleague-name">Jonathan</div>
+                        <div class="colleague-role">Web Developer</div>
+                    </div>
+                    <div class="colleague">
+                        <img src="img/sir3.jpg" alt="Christian">
+                        <div class="colleague-name">Christian</div>
+                        <div class="colleague-role">Mobile Developer</div>
+                    </div>
+                    <div class="colleague">
+                        <img src="img/sir4.jpg" alt="Joseph">
+                        <div class="colleague-name">Joseph</div>
+                        <div class="colleague-role">Programmer</div>
+                    </div>
+                    <div class="colleague">
+                        <img src="img/sir5.jpg" alt="Lorenzo">
+                        <div class="colleague-name">Lorenzo</div>
+                        <div class="colleague-role">Computer Maintenance Technologist</div>
+                        <div class="colleague-name">Romeo</div>
+                        <div class="colleague-role">Hardware & Software Technician</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Adriane. All rights reserved.
+    </footer>
+
+    <!-- JavaScript for Hamburger Menu (Optional) -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

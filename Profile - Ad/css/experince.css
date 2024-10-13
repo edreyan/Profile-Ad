@@ -1,0 +1,318 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
+}
+
+/* Header Styling */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 12%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.logo:hover {
+    color: orangered;
+    text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+.logo span {
+    color: orangered;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.navbar a i {
+    margin-right: 5px;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: orangered;
+    border-bottom: 3px solid orangered;
+}
+
+.contact {
+    padding: 5px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.contact i {
+    margin-right: 5px;
+}
+
+.contact:hover {
+    background-color: orangered;
+    box-shadow: 0 0 25px orangered;
+    color: white;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: left 0.3s ease;
+    }
+
+    .navbar.active {
+        left: 0;
+    }
+
+    .navbar a {
+        margin: 20px 0;
+        font-size: 24px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+/* Main Content Styling */
+main {
+    padding: 120px 5% 60px; /* Top padding accounts for fixed header */
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.experience-section h1 {
+    font-size: 48px;
+    color: orangered;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.experience-item {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.experience-item h2 {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.experience-item p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.experience-item ul {
+    padding-left: 20px;
+}
+
+.experience-item ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Colleagues Section */
+.colleagues-section {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.colleagues-section h2 {
+    font-size: 24px;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.colleagues-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.colleague {
+    text-align: center;
+    width: 120px;
+}
+
+.colleague img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.colleague img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px orangered;
+}
+
+.colleague-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.colleague-role {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar a {
+        margin: 0 10px;
+        font-size: 16px;
+    }
+
+    .colleague {
+        width: 100px;
+    }
+
+    .colleague-role {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 8%;
+    }
+
+    .navbar a {
+        margin: 0 8px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 100px 3% 60px;
+    }
+
+    .experience-section h1 {
+        font-size: 40px;
+    }
+
+    .experience-item h2 {
+        font-size: 20px;
+    }
+
+    .colleague {
+        width: 90px;
+    }
+
+    .colleague-role {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    .contact {
+        padding: 5px 20px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 80px 2% 60px;
+    }s
+
+    .experience-section h1 {
+        font-size: 32px;
+    }
+
+    .experience-item h2 {
+        font-size: 18px;
+    }
+
+    .colleague {
+        width: 80px;
+    }
+
+    .colleague-role {
+        font-size: 10px;
+    }
+}

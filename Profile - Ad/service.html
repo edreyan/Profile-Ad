@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/service.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    <header class="header">
+        <a href="index.html" class="logo">
+            <span>Adriane</span>
+        </a>
+        
+       
+        <nav class="navbar">
+            <a href="portfolio.html" class="nav-link"><i class='bx bx-briefcase'></i> Portfolio</a>
+            <a href="experience.html" class="nav-link"><i class='bx bx-star'></i> Experience</a>
+            <a href="education.html" class="nav-link"><i class='bx bx-book-alt'></i> Education</a>
+        </nav>
+        
+        <div class="header-buttons">
+            <a href="contact.html" class="contact"><i class='bx bx-envelope'></i> Contact Me</a>
+            <a href="Document/Adriane.pdf" class="btn-2" download="Adriane-Cerna-Resume.pdf"><i class='bx bx-download'></i> Download Resume</a>
+        </div>
+        
+        
+        <div class="hamburger">
+            <i class='bx bx-menu'></i>
+        </div>
+    </header>
+
+    
+    <main>
+        <h1>My Services</h1>
+
+        <section>
+            <h2>Programming Languages</h2>
+            <ul>
+                <li>C++</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+                <li>Python</li>
+            </ul>
+
+            <h2>Database Systems</h2>
+            <ul>
+                <li>MySQL</li>
+                <li>HeidiSQL</li>
+                <li>phpMyAdmin</li>
+            </ul>
+
+            <h2>Operating Systems</h2>
+            <ul>
+                <li>Windows</li>
+            </ul>
+        </section>
+
+        <p>For more information, you can download my resume:</p>
+        <a href="Document/Adriane.pdf" download="Adriane-Cerna-Resume.pdf" class="resume-link"><i class='bx bx-download'></i> Download My Resume</a>
+    </main>
+
+    
+    <footer>
+        &copy; 2024 Adriane. All rights reserved.
+    </footer>
+
+    
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.navbar');
+        const headerButtons = document.querySelector('.header-buttons');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+            headerButtons.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
